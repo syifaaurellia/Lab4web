@@ -364,6 +364,6 @@ euismod.</p>
     </div>
 </section>
 ```
-[here](css/style.css)
+[here](Lab4_layout/https://github.com/syifaaurellia/Lab4web/blob/main/Lab4_layout/style.css)
 > - Kemudian tambahkan CSS yang ada pada 
 
