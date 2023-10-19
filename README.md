@@ -237,7 +237,7 @@ pretium ac.</p>
     font-size: 18px;
     line-height: 25px;
 }
-
+```
 ![11](https://github.com/syifaaurellia/Lab4web/assets/115867244/b196684c-b45d-4b0b-a438-38c14394de52)
 
 **6. Mengatur Layout Main dan Sidebar**
@@ -315,7 +315,8 @@ pharetra est nunc, nec pretium nunc pretium ac.</p>
 }
 ```
 
-![12](https://github.com/syifaaurellia/Lab4web/assets/115867244/7ca103f5-79cd-411e-851c-0a3f396df635)
+![13](https://github.com/syifaaurellia/Lab4web/assets/115867244/c2eba812-fa89-45b5-a345-36e28df936cc)
+
 
 
 **8. Mengatur Footer**
@@ -378,31 +379,270 @@ euismod.</p>
 text-align:center;
 }
 .box h3 {
-margin: 15px 0;
+    margin: 15px 0;
 }
 .box p {
-line-height: 20px;
-font-size: 14px;
-margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 box img {
-border: 0;
-vertical-align: middle;
+    border: 0;
+    vertical-align: middle;
 }
 .image-circle {
-border-radius: 50%;
+    border-radius: 50%;
 }
 .row {
-margin: 0 -10px;
-box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 .row:after, .row:before,
 .entry:after, .entry:before {
-content:'';
-display:table;
+    content:'';
+    display:table;
 }
 .row:after,
 .entry:after {
+    clear:both;
+}
+```
 
+![13](https://github.com/syifaaurellia/Lab4web/assets/115867244/df6c3f9a-96cb-4af9-be0a-1795f197ac96)
+
+
+**10. Menambahkan Content Artikel**
+> - Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content
+```
+<hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+<hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""
+class="right-img">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+```
+
+> - Kemudian tambahkan CSS
+```
+.divider {
+    border:0;
+    border-top:1px solid #eeeeee;
+    margin:40px 0;
+}
+/* entry */
+.entry {
+    margin: 15px 0;
+}
+.entry h2 {
+    margin-bottom: 20px;
+}
+.entry p {
+    line-height: 25px;
+}
+.entry img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.entry .right-img {
+    float: right;
+}
+```
+
+![14](https://github.com/syifaaurellia/Lab4web/assets/115867244/b6d48013-1684-4186-ac1f-e821a0f45542)
+
+
+**11. Lakukan validasi dokumen HTML dengan mengakses http://validator.w3.org/**
+
+![15](https://github.com/syifaaurellia/Lab4web/assets/115867244/0d8b82d2-433d-48c9-b96d-f8aefe7b9fc1)
+
+
+![16](https://github.com/syifaaurellia/Lab4web/assets/115867244/554bf716-c1ae-41bb-8f28-98e2d24a78fb)
+
+
+## Pertanyaan dan Tugas
+1. Tambahkan Layout untuk menu `About` => buat single layout yang berisi deskripsi, portfolio, dll
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        /* Tambahkan CSS sesuai kebutuhan untuk mengatur tampilan layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #97b28c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Perkenalkan nama saya <b>Syifa Aurellia Rahma</b>. Saya merupakan mahasiswa Universitas Pelita Bangsa dari fakultas teknik dan program studi <i>Teknik Informatika</i>.
+           Saya sedang belajar HTML dasar, seperti tugas yang saat ini saya kerjakan yaitu <b>Membuat Layout Web Sederhana.</b>
+           Untuk pada halaman ini saya ditugaskan untuk membuat isi dari menu layout <b>"About"</b></p>
+    </div>    
+     
+    <div class="container">
+        <h1>Portofolio</h1>
+        <h2>Tentang saya</h2>
+        <p>Saya adalah seorang mahasiswa yang minat dengan desain, pengembangan web, dan proyek-proyek sederhana.</p>
+    </div>
+    <div class="container">
+    <h2>Keterampilan</h2>
+    <ul>
+        <li>HTML dan CSS</li>
+        <li>Python</li>
+    </ul>
+    </div>
+</body>
+</html>
+```
+
+
+![17](https://github.com/syifaaurellia/Lab4web/assets/115867244/0d53dd2a-2211-40f1-be47-66e5e891562f)
+
+
+2. Tambahkan layout untuk menu `Contact` => yang berisi form isian: nama, email, message, dll
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        /* Tambahkan CSS sesuai kebutuhan untuk mengatur tampilan layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #97b28c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Kirim Pesan">
+        </form>
+    </div>
+</body>
+</html>
+```
+
+
+![18](https://github.com/syifaaurellia/Lab4web/assets/115867244/71baaad9-545c-4319-925a-aec0499bc892)
+
+
+
+## Finish, Terima Kasih
