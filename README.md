@@ -364,6 +364,45 @@ euismod.</p>
     </div>
 </section>
 ```
-[here](Lab4_layout/https://github.com/syifaaurellia/Lab4web/blob/main/Lab4_layout/style.css)
-> - Kemudian tambahkan CSS yang ada pada 
+> - Kemudian tambahkan CSS :
+```
+/* box */
+.box {
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+text-align:center;
+}
+.box h3 {
+margin: 15px 0;
+}
+.box p {
+line-height: 20px;
+font-size: 14px;
+margin-bottom: 15px;
+}
+box img {
+border: 0;
+vertical-align: middle;
+}
+.image-circle {
+border-radius: 50%;
+}
+.row {
+margin: 0 -10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+content:'';
+display:table;
+}
+.row:after,
+.entry:after {
 
