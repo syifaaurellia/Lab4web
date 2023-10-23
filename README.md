@@ -464,7 +464,8 @@ pretium ac.</p>
 }
 ```
 
-![14](https://github.com/syifaaurellia/Lab4web/assets/115867244/b6d48013-1684-4186-ac1f-e821a0f45542)
+![Screenshot (80)](https://github.com/syifaaurellia/Lab4web/assets/115867244/6b302514-76bf-4b8d-bf17-30c0014551a9)
+
 
 
 **11. Lakukan validasi dokumen HTML dengan mengakses http://validator.w3.org/**
